@@ -3,13 +3,13 @@ Focus+ :
 MERN (Mongodb Express React Node)
 
 extension d'installer : (disponible dans le ficher package.json)
-    - axios
-    - mongoose (A installer si besoin)
-    - cors
-    - multer
-    - express
-    - fs
-    - child_process
+    <li>axios</li>
+    <li> mongoose (A installer si besoin)</li>
+    <li>cors</li>
+    <li>multer</li>
+    <li>express</li>
+    <li>fs</li>
+    <li>child_process</li>
 
 Le script.sh s'uitlise avec la lib de gmic (installateur (.rpm) dans le dossier instal_gmic)
 
