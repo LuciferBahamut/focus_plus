@@ -1,19 +1,12 @@
 const router = require('express').Router();
-const { response } = require('express');
-const FormData = require('form-data');
-const sharp = require('sharp');
+const multer = require('multer');
 
-router.route('/upload').post((req, res) => {
+router.post('/upload', multer.any("image"), function(req, res) {
     console.log(req.body);
     const files = req.body;
     console.log(files);
-    const formData = new FormData(req.body);
-    console.log(formData);
-    console.log(formData.value);
-    sharp(files).toFile('./test.png', function(err, info){
-        res.send(response);
-    });
-    console.log("END OF THE ROUTE");
+    console.log("Uploaded file: ", req.file);
+    //res.redirect("/");   
 });
 
 module.exports = router;
