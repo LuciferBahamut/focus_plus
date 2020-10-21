@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const moogoose = require('mongoose');
+//const moogoose = require('mongoose'); A installer si besoin
 const multer = require('multer');
 const fs = require('fs');
 const exec = require('child_process').exec;
