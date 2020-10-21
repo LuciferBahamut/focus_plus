@@ -1,6 +1,6 @@
 <h1>Focus+<h1>
 
-<h2>MERN (Mongodb Express React Node)</h2>
+<h3>MERN (Mongodb Express React Node)</h3>
 
 Extension d'installer :
     <li>axios</li>
@@ -13,10 +13,10 @@ Extension d'installer :
 
 <p>Le script.sh s'uitlise avec la lib de gmic (installateur (.rpm) dans le dossier instal_gmic).</p>
 
-<h2>Actuel problème :</h2>
+<h3>Actuel problème :</h3>
 <p>Faire le retour des images générer.</p>
 
-<h3>A faire :<h3>
+<h3>A faire :</h3>
 <p>Fixer quelque problème surtout celui évoquer au dessus.
 Faire la page d'accueil.
 Faire les deux autres parties :</p>
