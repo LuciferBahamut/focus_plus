@@ -1,8 +1,9 @@
+//\\ DEPENDENCIES //\\
 import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
-
 import './DropZone.css';
 
+//\\ INITIALISATION //\\
 const Dropzone = () => {
     const fileInputRef = useRef();
     const modalImageRef = useRef();
@@ -127,6 +128,7 @@ const Dropzone = () => {
         modalImageRef.current.style.backgroundImage = 'none';
     }
 
+    //\\ FUNCTION D'UPLOAD //\\
     const uploadFiles = async () => {
         uploadModalRef.current.style.display = 'block';
         uploadRef.current.innerHTML = 'File(s) Uploading...';
@@ -135,7 +137,7 @@ const Dropzone = () => {
             formData.append('image', validFiles[i]);
             //formData.append('key', 'f4d865cfa7700f62b9b6e23fc864b18c');
 
-            axios.post('http://localhost:5000/users/upload', formData, {
+            axios.post('http://localhost:5000/users/upload', formData, { // REQUETE HTTP
                 headers: {
                     'content-type': 'multipart/form-data'
                 },
@@ -164,7 +166,7 @@ const Dropzone = () => {
         uploadModalRef.current.style.display = 'none';
     }
 
-
+    //\\ AFFICHAGE //\\
     return (
         <>
             <div className="container">
@@ -225,4 +227,5 @@ const Dropzone = () => {
     );
 }
 
+//\\ EXPORTS //\\
 export default Dropzone;
