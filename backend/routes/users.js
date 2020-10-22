@@ -1,32 +1,38 @@
+//\\ DEPENDENCIES //\\
 const router = require('express').Router();
 const multer = require('multer');
 const fs = require('fs');
 const exec = require('child_process').exec;
 
+//\\ FUNCTION STOCKAGE //\\
 var storage = multer.diskStorage({
     destination : function(req, file, callback) {
-        fs.mkdir('./upload', function(err) {
+        fs.mkdir('./upload', function(err) { // Créer un dossier appeler upload dans le dossier courant
             if(err) {
                 console.log(err.stack);
             } else {
-                callback(null, './upload');
+                callback(null, './upload'); // Enregistre le ficher dans le dossier
             }
         })
     },
-    filename: function(req, file, callback) {
+    filename: function(req, file, callback) { // Nomme l'image "image.png"
         callback(null, 'image.png');
     }
 });
 
-router.post('/upload', function(req, res) {
-    var upload = multer({storage : storage}).single('image');
+
+//\\ ROUTES //\\
+router.post('/upload', function(req, res) { // La route upload
+    var upload = multer({storage : storage}).single('image'); // Appelle la function de stockage
     upload(req, res, function(err) {
         if(err) {
             return res.end("Error uploading file.");
         }
         res.end("File is uploaded")
     });
-    exec('sh test.sh /myDir');
+    exec('sh test.sh /myDir'); // execute le script.sh
 });
 
+
+//\\ EXPORTS //\\
 module.exports = router;
