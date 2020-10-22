@@ -17,7 +17,13 @@ gmic -input test3.png \
      -output test3.png
 
 rm -r upload
-mkdir download
-mv test1.png download
-mv test2.png download
-mv test3.png download
+if [ -d download ]; then
+     mv test1.png download
+     mv test2.png download
+     mv test3.png download
+else
+     mkdir download
+     mv test1.png download
+     mv test2.png download
+     mv test3.png download
+fi
