@@ -31,7 +31,6 @@ const Dropzone = () => {
 
     const preventDefault = (e) => {
         e.preventDefault();
-        // e.stopPropagation();
     }
 
     const dragOver = (e) => {
@@ -135,7 +134,6 @@ const Dropzone = () => {
         for (let i = 0; i < validFiles.length; i++) {
             const formData = new FormData();
             formData.append('image', validFiles[i]);
-            //formData.append('key', 'f4d865cfa7700f62b9b6e23fc864b18c');
 
             axios.post('http://localhost:5000/users/upload', formData, { // REQUETE HTTP
                 headers: {
@@ -155,7 +153,8 @@ const Dropzone = () => {
                     }
                 },
             })
-            .catch(() => {
+            .catch((error) => {
+                console.log(error);
                 uploadRef.current.innerHTML = `<span class="error">Error Uploading File(s)</span>`;
                 progressRef.current.style.backgroundColor = 'red';
             })
@@ -220,6 +219,9 @@ const Dropzone = () => {
                     <span ref={uploadRef}></span>
                     <div className="progress">
                         <div className="progress-bar" ref={progressRef}></div>
+                        <div className="download">
+                           <a href="./Download/images.zip" download>DOWNLOAD FILE</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -222,6 +222,15 @@
     font-weight: bold;
 }
 
+.download {
+    position: absolute;
+    background-color: #30693D;
+    text-align: center;
+    color: red;
+    border-radius: 5px;
+    translate: (-50%, -50%);
+}
+
 .error {
     color: red;
 }
