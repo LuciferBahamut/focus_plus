@@ -30,7 +30,7 @@ router.post('/upload', function(req, res) { // La route upload
         }
         res.end('ERROR file not uploaded');
     });
-    exec('sh test.sh /myDir'); // execute le script.sh
+    exec('sh gmic.sh /myDir'); // execute le script.sh
 });
 
 //\\ EXPORTS //\\
