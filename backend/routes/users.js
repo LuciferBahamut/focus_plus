@@ -26,13 +26,12 @@ router.post('/upload', function(req, res) { // La route upload
     var upload = multer({storage : storage}).single('image'); // Appelle la function de stockage
     upload(req, res, function(err) {
         if(err) {
-            return res.end("Error uploading file.");
+            return res.end('File uploaded');
         }
-        res.end("File is uploaded")
+        res.end('ERROR file not uploaded');
     });
     exec('sh test.sh /myDir'); // execute le script.sh
 });
-
 
 //\\ EXPORTS //\\
 module.exports = router;
