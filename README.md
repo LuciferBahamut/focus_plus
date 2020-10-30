@@ -24,21 +24,21 @@ Faire la page d'accueil.
 Faire les deux autres parties :</p>
     <li>Partie vidéo (un peu comme youtube)</li>
     <li>Partie forum (un peu comme jeuxvideo.com)</li>
-<p>Renforcer la 1er partie avec du machine learning</p>
+    <li>Renforcer la 1er partie avec du machine learning</li>
 
 <h2>Détails</h2>
 
-<p>Ceci est un propotype de Focus+ (réaliser par deux stagiaires d'Epitech)
-Nous avons utilisé les languages suivant : React.js + Express.js + Node.js
-Pour la base de donnée on utilisera : MongoDB (a changer si besoin pour les serveurs du ministère)
-Comme nous utilisons ces outils on utilise donc la techno fullstack appeler MERN
-La partie REACT.js se trouve dans le dossier "src"
-La partie EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"
-Le front utilise le port 3000 et le back le port 5000 (les ports sont bien sur modifiable).</p>
+<p>Ceci est un propotype de Focus+ (réaliser par deux stagiaires d'Epitech)</p>
+<p>Nous avons utilisé les languages suivant : React.js + Express.js + Node.js</p>
+<p>Pour la base de donnée on utilisera : MongoDB (a changer si besoin pour les serveurs du ministère)</p>
+<p>Comme nous utilisons ces outils on utilise donc la techno fullstack appeler MERN</p>
+<p>La partie REACT.js se trouve dans le dossier "src"</p>
+<p>La partie EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"</p>
+<p>Le front utilise le port 3000 et le back le port 5000 (les ports sont bien sur modifiable).</p>
 
-<p>Problèmes notables :
-Nous avons eux quelque problèmatiques durant la conception de ce prototype.
-ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINE CHOSE CAR CERTAINS PORT OU ADDRESSE SONT BLOQUE PAR UN FIREWALL !!!
+<p>Problèmes notables :</p>
+<p>Nous avons eux quelque problèmatiques durant la conception de ce prototype.</p>
+<p>ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINE CHOSE CAR CERTAINS PORT OU ADDRESSE SONT BLOQUE PAR UN FIREWALL !!!</p>
 
 - Tout d'abord le choix du langage :
 Nous voulions utiliser a la base du REACT + C# sauf que les serveurs du ministère sont sous linux, C# étant plus orienté Windows nous nous sommes décider de finalement utilisé le Node.js.
