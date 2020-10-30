@@ -1,5 +1,7 @@
 <h1>Focus+ Prototype<h1>
 
+<p>Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'usager puisse améliorer sa production.</p>
+
 <h3>MERN (Mongodb Express React Node)</h3>
 
 <p>Extension utilisées :</p>
@@ -36,6 +38,8 @@ Faire les deux autres parties :</p>
 <p>Les parties EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"</p>
 <p>Le front utilise le port 3000 et le back le port 5000 (les ports sont bien sûr modifiables).</p>
 
+<p>Pour la partie Vidéo, les vidéos devront être héberger sur le PeerTube du Lab110 Bis</p>
+
 <p>Problèmes notables :</p>
 <p>Nous avons eux quelques problèmatiques durant la conception de ce prototype.</p>
 <p>ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINE CHOSE CAR CERTAINS PORT OU ADDRESSE SONT BLOQUE PAR UN FIREWALL !!!</p>
@@ -58,5 +62,9 @@ Du coup, nous avons nous même fait un Drag & Drop.
 
 - Problème pour récupérer les fichiers :
 Nous avons eu aussi un problème pour récupérer les fichiers générés par le script.sh (gmic.sh), lorsque l'on faisait le download, on ne récuperait qu'un .html.
-Après plusieurs recherches nous avons découvert que, pour que le REACT trouve les fichiers il faut les placer dans le dossier "public".
-</p>
+Après plusieurs recherches nous avons découvert que, pour que le REACT trouve les fichiers il faut les placer dans le dossier "public".</p>
+
+<h2>Nos idées</h2>
+
+<p>Voici une petite liste de nos idées concernant la suite du projet :</p>
+    <li>Utiliser Python pour le machine learning</li>
