@@ -30,10 +30,7 @@ Faire les deux autres parties :</p>
 
 <h2>Utilisation</h2>
 
-<p> Pour lancher le script "run.sh" utiliser la commande :
-```
-./run.sh
-```
+<p> Pour lancher le script "run.sh" utiliser la commande : "./run.sh"
 cela lancera le backend en tâche de fond puis le frontend.</p>
 
 <h2>Détails</h2>
