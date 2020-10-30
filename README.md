@@ -1,4 +1,4 @@
-<h1>Focus+ Prototype<h1>
+<h1>Focus+ Prototype</h1>
 
 <p>Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'usager puisse améliorer sa production.</p>
 
