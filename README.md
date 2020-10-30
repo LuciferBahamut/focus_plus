@@ -23,6 +23,7 @@
 <h3>A faire :</h3>
 <p>Fix quelques problèmes (évoquer au dessus).
 Faire la page d'accueil.
+Rendre le site accessible.
 Faire les deux autres parties :</p>
     <li>Partie vidéo (un peu comme youtube)</li>
     <li>Partie forum (un peu comme jeuxvideo.com)</li>
