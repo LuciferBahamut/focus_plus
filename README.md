@@ -28,6 +28,14 @@ Faire les deux autres parties :</p>
     <li>Partie forum (un peu comme jeuxvideo.com)</li>
     <li>Renforcer la 1er partie avec du machine learning</li>
 
+<h2>Utilisation</h2>
+
+<p> Pour lancher le script "run.sh" utiliser la commande :
+```
+./run.sh
+```
+cela lancera le backend en tâche de fond puis le frontend.</p>
+
 <h2>Détails</h2>
 
 <p>Ceci est un propotype de Focus+ (réalisé par deux stagiaires d'Epitech)</p>
