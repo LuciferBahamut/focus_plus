@@ -8,7 +8,7 @@ const app = express(); // Utilise la librérie express
 const port = process.env.PORT || 5000; // Initailise le port du server au port 5000 
 
 app.use(cors());
-app.use(express.json()); 
+app.use(express.json());
 
 const userRouter = require('./routes/users'); // Initialise la route
 
