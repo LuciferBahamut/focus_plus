@@ -1,29 +1,31 @@
 #!/usr/bin/bash
 
-cp ./upload/image.png test1.png
-cp ./upload/image.png test2.png
-cp ./upload/image.png test3.png
+cp ./upload/image.png image1.png
+cp ./upload/image.png image2.png
+cp ./upload/image.png image3.png
 
-gmic -input test1.png \
+gmic -input image1.png \
      -colorblind 1 \
-     -output test1.png
+     -output image1.png
 
-gmic -input test2.png \
+gmic -input image2.png \
      -colorblind 2 \
-     -output test2.png
+     -output image2.png
 
-gmic -input test3.png \
+gmic -input image3.png \
      -colorblind 3 \
-     -output test3.png
+     -output image3.png
+
+sleep 2
 
 rm -r upload
-if [ -d download ]; then
-     mv test1.png download
-     mv test2.png download
-     mv test3.png download
+zip images.zip image1.png image2.png image3.png
+
+if [ -d ../public/Download ]; then
+     mv images.zip ../public/Download
 else
-     mkdir download
-     mv test1.png download
-     mv test2.png download
-     mv test3.png download
+     mkdir ../public/Download
+     mv images.zip ../public/Download
 fi
+
+rm image1.png image2.png image3.png
