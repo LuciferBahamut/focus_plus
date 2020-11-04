@@ -74,3 +74,5 @@ Après plusieurs recherches nous avons découvert que, pour que le REACT trouve 
 
 <p>Voici une petite liste de nos idées concernant la suite du projet :</p>
     <li>Utiliser Python pour le machine learning</li>
+
+![schema_explicatif(schema_explicatif.png)]
