@@ -35,6 +35,7 @@ Cette base de donnée est facilement modifiable. (Et est pour l'instant sous un 
         <li>react-dropzone (permet d'avoir notre drag and drop facilement)</li>
         <li>react-router-dom (permet de naviguer entre les différente page facilement)</li>
     <p>
+    
     Pour le Back</p>
         <li> mongoose (Connection avec la base de donnée MongoDB)</li>
         <li>cors</li>
@@ -43,7 +44,7 @@ Cette base de donnée est facilement modifiable. (Et est pour l'instant sous un 
         <li>child_process (Permet d'éxécuter un script)</li>
 
 <p>Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sur fedora il est possible que le .rpm ne soit pas bon pour votre système d'exploitation, voici un lien si besoin : </p>
-<a href="https://gmic.eu/download.html"></a>
+<a href="https://gmic.eu/download.html">Installer Gmic</a>
 <p>Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend en tache de fond sur le port 5000 puis le frontend sur le port 3000).</p>
 <p>Les scripts ne peuvent être utiliser seulement si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle a prévoir)</p>
 
