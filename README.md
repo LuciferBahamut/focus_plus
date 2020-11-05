@@ -81,7 +81,7 @@ Faire les deux autres parties :</p>
 
 <p>Pour la partie Vidéo, les vidéos devront être héberger sur le PeerTube du Lab110 Bis</p>
 
-<p>Problèmes notables :</p>
+<p>Points Historiques :</p>
 <p>Nous avons eux quelques problèmatiques durant la conception de ce prototype.</p>
 <p>ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINE CHOSE CAR CERTAINS PORT OU ADDRESSE SONT BLOQUE PAR UN FIREWALL !!!</p>
 
