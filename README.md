@@ -34,7 +34,8 @@ Cette base de donnée est facilement modifiable. (Et est pour l'instant sous un 
         <li>react-bootstrap</li>
         <li>react-dropzone (permet d'avoir notre drag and drop facilement)</li>
         <li>react-router-dom (permet de naviguer entre les différente page facilement)</li>
-    <p>Pour le Back</p>
+    <p>
+    Pour le Back</p>
         <li> mongoose (Connection avec la base de donnée MongoDB)</li>
         <li>cors</li>
         <li>multer (Sauvergarde sur le serveur les fichiers uploader)</li>
@@ -53,8 +54,8 @@ Cette base de donnée est facilement modifiable. (Et est pour l'instant sous un 
 <p>Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont a l'utilisateur</p>
 
 <h2>Actuel problème :</h2>
-<p>Ne peut renvoyer qu'un seul fichier (script modifier en conséquence)
-Accès a MongoDB (filtre d'adresse IP)</p>
+<p>Ne peut renvoyer qu'un seul fichier (script modifier en conséquence)</p>
+<p>Accès a MongoDB (filtre d'adresse IP)</p>
 
 <h2>A faire :</h2>
 <p>Fix quelques problèmes (évoquer au dessus).
@@ -81,7 +82,7 @@ Faire les deux autres parties :</p>
 
 <p>Pour la partie Vidéo, les vidéos devront être héberger sur le PeerTube du Lab110 Bis</p>
 
-<p>Points Historiques :</p>
+<h2>Points Historiques :</h2>
 <p>Nous avons eux quelques problèmatiques durant la conception de ce prototype.</p>
 <p>ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINE CHOSE CAR CERTAINS PORT OU ADDRESSE SONT BLOQUE PAR UN FIREWALL !!!</p>
 
