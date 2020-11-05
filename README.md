@@ -56,11 +56,11 @@ Cette base de donnée est facilement modifiable. (Et est pour l'instant sous un 
 <h2>Actuel problème :</h2>
 <p>Ne peut renvoyer qu'un seul fichier (script modifier en conséquence)</p>
 <p>Accès a MongoDB (filtre d'adresse IP)</p>
+<p>Rendre la plateforme accessible a11y</p>
 
 <h2>A faire :</h2>
 <p>Fix quelques problèmes (évoquer au dessus).
 Faire la page d'accueil.
-Rendre le site accessible.
 Faire les deux autres parties :</p>
     <li>Partie vidéo (un peu comme youtube)</li>
     <li>Partie forum (un peu comme jeuxvideo.com)</li>
