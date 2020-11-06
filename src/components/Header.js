@@ -4,13 +4,19 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <div className="header">
-      <h1>Conversion d'images sous vue daltonienne</h1>
+      <h1>Focus +</h1>
       <nav>
         <NavLink activeClassName="active" to="/" exact={true}>
           Accueil
         </NavLink>
-        <NavLink activeClassName="active" to="/list">
-          Liste de fichiers
+        <NavLink activeClassName="active" to="/focus+">
+          Focus+
+        </NavLink>
+        <NavLink activeClassName="active" to="/video">
+          Video tuto
+        </NavLink>
+        <NavLink activeClassName="active" to="/forum">
+          Forum
         </NavLink>
       </nav>
     </div>
