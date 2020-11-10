@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-cd backend
+cd server
 npm start &
 
 cd ..
