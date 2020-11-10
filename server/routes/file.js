@@ -34,14 +34,14 @@ const upload = multer({
 
 Router.post('/upload', upload.single('file'), async (req, res) => {
     try {
-      const { path, mimetype } = req.file;
+      //const { path, mimetype } = req.file;
       const file = new File({
-        file_path: path,
-        file_mimetype: mimetype
+        file_path: "files/images.zip",
+        file_mimetype: "archive/zip"
       });
       await file.save();
+      await exec('sh gmic.sh /myDir');
       res.send('Votre image a bien été envoyée.');
-      exec('sh gmic.sh /myDir');
     } catch (error) {
       res.status(400).send("Erreur pendant l'envoie. Réessayez plus tard.");
     }
