@@ -54,7 +54,6 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 <p>Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur</p>
 
 <h2>Actuel problème :</h2>
-<p>Ne peut renvoyer qu'un seul fichier (script modifier en conséquence)</p>
 <p>Rendre la plateforme accessible a11y</p>
 
 <h2>A faire :</h2>
@@ -106,7 +105,19 @@ Nous avons eu aussi un problème pour récupérer les fichiers générés par le
 Après plusieurs recherches nous avons découvert que, pour que le REACT trouve les fichiers il faut les placer dans le dossier "public".
 
 - NOUVELLE VERSION :
-L'ancienne version est disponible dans le dossier Archive, nous avons décider de faire une toute nouvelle version du prototype car l'ancienne version ne pouvait pas utiliser bootstrap (qui optimise le site) de plus cela nous a permis de faire une interface plus simple et plus ergonomique et avec moins de bug</p>
+L'ancienne version est disponible dans le dossier Archive, nous avons décider de faire une toute nouvelle version du prototype car l'ancienne version ne pouvait pas utiliser bootstrap (qui optimise le site) de plus cela nous a permis de faire une interface plus simple et plus ergonomique et avec beaucoup moins de bug
+
+- A11Y :
+Nous avons essayé de rendre accessible notre plateforme Web malheureusement sans y arriver pour l'instant.
+Regardez React a11y, bootstrap a11y et css a11y.
+
+- MongoDB :
+MongoDB nous cause des problèmes car pour l'instant seulement Quentin arrive à l'utiliser avec le programme malgré la désactivation du filtre d'adresse IP.
+
+- Déploiement du site :
+Nous ne pouvons actuellement déployer que la partie Front du site, simplement parce que notre backend est constiué de 3 parties et deux d'entre elles sont du Bash et une Lib GMIC, ce qui rend difficile l'hébergement de ce dernier sans utiliser un de nos serveurs (en cours de réflexion).</p>
+
+![schema_explicatif_bis](schema_explicatif_bis.png)
 
 <h2>Nos idées</h2>
 
