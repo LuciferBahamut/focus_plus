@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const exec = require('child_process').exec;
+const path = require('path');
 const File = require('../model/file');
-const fileCtrl = require('../controller/file');
 
 const upload = multer({
     storage: multer.diskStorage({
@@ -52,8 +52,30 @@ router.post('/upload', upload.single('file'), async (req, res) => {
   }
 );
 
-//router.post('/upload', fileCtrl.upload); I failed to transform the function upload and route post in this form.
-router.get('/getAllFiles', fileCtrl.getAllFiles);
-router.get('/download/:id', fileCtrl.download);
+//\\ ROUTE GET //\\
+
+router.get('/getAllFiles', async (req, res) => {
+  try {
+      const files = await File.find({});
+      const sortedByCreationDate = files.sort(
+          (a, b) => b.createAt - a.createAt
+      );
+      res.send(sortedByCreationDate);
+  } catch (error) {
+      res.status(400).send('Erreur pendant la récupération des images. Réeesayez plus tard.');
+  }
+});
+
+router.get('/download/:id', async (req, res) => {
+  try {
+      const file = await File.findById(req.params.id);
+      res.set({
+          'Content-Type': file.file_minetype
+      });
+      res.sendFile(path.join(__dirname, '..', file.file_path));
+  } catch (error) {
+      res.status(400).send('Erreur pendant le téléchargement. Réessayez plus tard.');
+  }
+});
 
 module.exports = router;
