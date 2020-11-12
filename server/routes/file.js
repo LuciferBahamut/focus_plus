@@ -1,10 +1,9 @@
-const path = require('path');
 const express = require('express');
+const router = express.Router();
 const multer = require('multer');
 const exec = require('child_process').exec;
-//const User = require('../model/user');
 const File = require('../model/file');
-const Router = express.Router();
+const fileCtrl = require('../controller/file');
 
 const upload = multer({
     storage: multer.diskStorage({
@@ -32,7 +31,7 @@ const upload = multer({
 
 //\\ ROUTE POST //\\
 
-Router.post('/upload', upload.single('file'), async (req, res) => {
+router.post('/upload', upload.single('file'), async (req, res) => {
     try {
       //const { path, mimetype } = req.file;
       const file = new File({
@@ -40,7 +39,7 @@ Router.post('/upload', upload.single('file'), async (req, res) => {
         file_mimetype: "archive/zip"
       });
       await file.save();
-      await exec('sh gmic.sh /myDir');
+      exec('sh gmic.sh /myDir');
       res.send('Votre image a bien été envoyée.');
     } catch (error) {
       res.status(400).send("Erreur pendant l'envoie. Réessayez plus tard.");
@@ -53,30 +52,8 @@ Router.post('/upload', upload.single('file'), async (req, res) => {
   }
 );
 
-//\\ ROUTE GET //\\
+//router.post('/upload', fileCtrl.upload); I failed to transform the function upload and route post in this form.
+router.get('/getAllFiles', fileCtrl.getAllFiles);
+router.get('/download/:id', fileCtrl.download);
 
-Router.get('/getAllFiles', async (req, res) => {
-    try {
-        const files = await File.find({});
-        const sortedByCreationDate = files.sort(
-            (a, b) => b.createAt - a.createAt
-        );
-        res.send(sortedByCreationDate);
-    } catch (error) {
-        res.status(400).send('Erreur pendant la récupération des images. Réeesayez plus tard.');
-    }
-});
-
-Router.get('/download/:id', async (req, res) => {
-    try {
-        const file = await File.findById(req.params.id);
-        res.set({
-            'Content-Type': file.file_minetype
-        });
-        res.sendFile(path.join(__dirname, '..', file.file_path));
-    } catch (error) {
-        res.status(400).send('Erreur pendant le téléchargement. Réessayez plus tard.');
-    }
-});
-
-module.exports = Router;
+module.exports = router;
