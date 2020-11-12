@@ -1,13 +1,14 @@
-/* Example of schema for MongoDB (example is an idea for user for forum's part)
 const mongoose = require('mongoose');
+const uniqueValidator = require('mongoose-unique-validator');
 
 const userSchema = mongoose.Schema( {
     username: {
         type: String,
         required: true,
-        trim: true
+        trim: true,
+        unique: true
     },
-    message: {
+    password: {
         type: String,
         required: true,
         trim: true
@@ -18,7 +19,8 @@ const userSchema = mongoose.Schema( {
     }
 );
 
+userSchema.plugin(uniqueValidator);
+
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;
-*/
