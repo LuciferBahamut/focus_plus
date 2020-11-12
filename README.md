@@ -36,7 +36,10 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
         <li>react-router-dom (permet de naviguer entre les différentes pages facilement)</li>
     <p></p>
     <p>Pour le Back</p>
-        <li> mongoose (Connection avec la base de données MongoDB)</li>
+        <li>mongoose (Connection avec la base de données MongoDB)</li>
+        <li>mongoose-unique-validator</li>
+        <li>jswebtoken</li>
+        <li>bcrypt</li>
         <li>cors</li>
         <li>multer (Sauvergarde sur le serveur les fichiers uploader)</li>
         <li>express (Partie Middleware)</li>
