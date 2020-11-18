@@ -1,14 +1,13 @@
 const express = require('express');
 const router = express.Router();
-//const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../model/user');
 
+//\\ ADD SECURITY AT THESE ROUTES //\\
+
 router.post('/signup', async(req, res) => {
-    console.log(req.body.username);
     try {
     const { username, password } = req.body;
-//    bcrypt.hash(password, 10);
     const user = new User({
         username,
         password,
@@ -26,28 +25,32 @@ router.post('/signup', async(req, res) => {
 });
 
 router.post('/login', async(req, res) => {
-    User.findOne({ username: req.body.username })
-    .then(user => {
-        if (!user) {
-            return res.status(401).json({ error: 'Utilisateur non trouvé ! '});
-        }
-        bcrypt.compare(password, user.password)
-        .then(valid => {
-            if (!valid) {
-                return res.status(401).json({ error: 'Mot de passe incorect !' });
+    const password = req.body.password;
+    try {
+        const user = await User.findOne({username: req.body.username});
+        await User.findOne({username: req.body.username})
+        .then(user => {
+            if(!user) { // FIX NOT VERY FONCTIONAL
+                console.log("ERREUR IS HERE !!!");
+                res.status(401).send("Cet utilisateur n'existe pas.");    
             }
-            res.status(200).json({
-                userId: user._id,
-                token: jwt.sign(
-                    { userId: user.__id }, 
-                    'RANDOM_TOKEN_SECRET',
-                    { expiresIn: '24h' }
-                )
-            });
         })
-        .catch(error => res.status(500).json({ error }));
-    })
-    .catch(error => res.status(500).json({ error }));
+        if(password === user.password) { // add message to user if he connect or not
+                res.status(200).json({
+                    userId: user._id,
+                    token: jwt.sign(
+                        { userId: user.__id }, 
+                        'RANDOM_TOKEN_SECRET',
+                        { expiresIn: '24h' }
+                    )
+                });
+                console.log("USER CONNECTED");
+            } else {
+                res.status(401).send('Mot de passe incorrect.');
+            }
+    } catch(error) {
+            res.status(400).send('Utilisateur ou mot de passe invalide. Veuillez réessayez.');
+        }
 });
 
 module.exports = router;
