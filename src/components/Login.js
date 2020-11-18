@@ -4,34 +4,31 @@ import axios from 'axios';
 import { API_URL } from '../utils/constants';
 
 const Connection = (props) => {
-  const [state, setState] = useState({
-    username: '',
-    password: ''
-  });
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
-  const handleInputChange = (event) => {
-    setState({
-      ...state,
-      [event.target.name]: event.target.value
-    });
-  };
+  
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  }
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  }
+
   const handleOnSubmit = async (event) => {
     event.preventDefault();
 
     try {
-        const { username, password } = state;
         if (username.trim() !== '' && password.trim() !== '') {
-          const formData = new FormData();
-          formData.append('username', username);
-          formData.append('password', password);
           setErrorMsg('');
-          await axios.post(`${API_URL}/login`, formData, {
-          headers: {
-          'Content-Type': 'multipart/form-data'
-          }
-            });
+          await axios.post(`${API_URL}/login`, {
+            username: username,
+            password: password
+          });
         } else {
-          setErrorMsg('Please enter all the field values.');
+          setErrorMsg("S'il vous plaît entrez un nom d'utilisateur et un mot de passe.");
         }
       } catch (error) {
         error.response && setErrorMsg(error.response.data);
@@ -53,9 +50,9 @@ const Connection = (props) => {
               <Form.Control
                 type="text"
                 name="username"
-                value={state.username || ''}
+                value={username || ''}
                 placeholder="Entrez votre nom d'utilisateur"
-                onChange={handleInputChange}
+                onChange={handleUsernameChange}
               />
             </Form.Group>
           </Col>
@@ -66,9 +63,9 @@ const Connection = (props) => {
               <Form.Control
                 type="text"
                 name="password"
-                value={state.password || ''}
+                value={password || ''}
                 placeholder="Entrez votre mot de passe"
-                onChange={handleInputChange}
+                onChange={handlePasswordChange}
               />
             </Form.Group>
           </Col>

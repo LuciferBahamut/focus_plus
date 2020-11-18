@@ -22,15 +22,10 @@ const Signup = (props) => {
 
     try {
       if (username.trim() !== '' && password.trim() !== '') {
-/*        const formData = new FormData();
-        formData.append('username', username);
-        formData.append('password', password);*/
-
-          setErrorMsg('');
+        setErrorMsg('');
           await axios.post(`${API_URL}/signup`, {
             username: username,
             password: password
-          }, {
           });
       } else {
         setErrorMsg("S'il vous plaît entrez un nom d'utilisateur et un mot de passe.");
