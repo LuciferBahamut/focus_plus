@@ -56,12 +56,10 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 
 <p>Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur</p>
 
-<h2>Actuel problème :</h2>
-<p>Rendre la plateforme accessible a11y</p>
-
 <h2>A faire :</h2>
 <p>Fix quelques problèmes (évoquer au dessus).
-Faire la page d'accueil.
+Rendre le site accessible.
+Sécurisé le site de divers attaques (cyber sécurité).
 Faire les deux autres parties :</p>
     <li>Partie vidéo (un peu comme youtube)</li>
     <li>Partie forum (un peu comme jeuxvideo.com)</li>
