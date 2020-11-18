@@ -39,7 +39,7 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
         <li>mongoose (Connection avec la base de données MongoDB)</li>
         <li>mongoose-unique-validator</li>
         <li>jswebtoken</li>
-        <li>bcrypt</li>
+        <li>body-parser</li>
         <li>cors</li>
         <li>multer (Sauvergarde sur le serveur les fichiers uploader)</li>
         <li>express (Partie Middleware)</li>
@@ -118,13 +118,20 @@ Regardez React a11y, bootstrap a11y et css a11y.
 MongoDB nous cause des problèmes car pour l'instant seulement Quentin arrive à l'utiliser avec le programme malgré la désactivation du filtre d'adresse IP.
 
 - Déploiement du site :
-Nous ne pouvons actuellement déployer que la partie Front du site, simplement parce que notre backend est constiué de 3 parties et deux d'entre elles sont du Bash et une Lib GMIC, ce qui rend difficile l'hébergement de ce dernier sans utiliser un de nos serveurs (en cours de réflexion).</p>
+Nous ne pouvons actuellement déployer que la partie Front du site, simplement parce que notre backend est constiué de 3 parties et deux d'entre elles sont du Bash et une Lib GMIC, ce qui rend difficile l'hébergement de ce dernier sans utiliser un de nos serveurs (en cours de réflexion).
 
 ![schema_explicatif_bis](schema_explicatif_bis.png)
+
+ - Utilisateur :
+ Nous avons rencotrés des problèmes avec une route pour créer nos utilisateur. Cela est finalement régler avec la lib "body-parser".
+
+ - Cyber sécurité :
+ Nous avons essayer de mettre la librairie de hashache "bcrypt" mais nous avons pas réussi à la faire fonctionner. Point à traiter.
 
 <h2>Nos idées</h2>
 
 <p>Voici une petite liste de nos idées concernant la suite du projet :</p>
     <li>Utiliser Python pour le machine learning afin de compléter la partie 1</li>
+    <li>Renforcer la cyber sécurité du site</li>
 
 <p>Pour toutes nouvelles idées voir avec l'intraprenneur du projet</p>
