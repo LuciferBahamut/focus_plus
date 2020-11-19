@@ -53,4 +53,34 @@ router.post('/login', async(req, res) => {
         }
 });
 
+/*router.post('/postMsg', async(req, res) => { // FAIRE UNE MAJ DE LA CLASSE
+});*/
+
+/*router.post('/postVideo', async(req, res) => { // FAIRE UNE MAJ DE LA CLASSE
+});*/
+
+router.get('/getAllMessage', async (req, res) => {
+    try {
+        const user = await User.find({});
+        const sortedByCreationDate = user.sort(
+            (a, b) => b.createAt - a.createAt
+        );
+        res.send(sortedByCreationDate);
+    } catch (error) {
+        res.status(400).send('Erreur pendant le chargement de la page. Réessayez plus tard');
+    }
+});
+
+router.get('/getAllVideo', async (req, res) => {
+    try {
+        const user = await User.find({});
+        const sortedByCreationDate = user.sort(
+            (a, b) => b.createAt - a.createAt
+        );
+        res.send(sortedByCreationDate);
+    } catch (error) {
+        res.status(400).send('Erreur pendant le chargement de la page. Réessayez plus tard');
+    }
+});
+
 module.exports = router;
