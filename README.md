@@ -2,6 +2,12 @@
 
 <p>Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.</p>
 
+<h2>Intrapreneur</h2>
+<p>Erwan Le Gall (novembre 2019 - octobre 2020)</p>
+
+<p>Logo imaginé et disigné par Erwan Le Gall</p>
+<a href=https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg>Son GitHub</a>
+
 <h2>Détails du projet</h2>
 
 <p>Focus+ sera constitué (pour l'instant) de 3 parties, chacune reliée avec une page d'accueil.
