@@ -19,6 +19,7 @@ const Header = () => {
           Forum
         </NavLink>
       </nav>
+      <p>Ceci n'est qu'un prototype</p>
     </div>
   );
 };
