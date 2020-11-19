@@ -61,7 +61,7 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 
 <p>Voici un petit schéma explicatif du fonctionnement de la première partie :</p>
 
-![schema_explicatif](schema_explicatif.png)
+![schema_explicatif](image/schema_explicatif.png)
 
 <p>Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur</p>
 
