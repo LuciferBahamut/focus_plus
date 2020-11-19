@@ -54,6 +54,7 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
         <li>child_process (Permet d'éxécuter un script)</li>
 
 <p></p>
+<p>La lib G'MiC à été réaliser par l'université de Caen <a href="https://gmic.eu">Site de G'MIC</a></p>
 <p>Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin : <a href="https://gmic.eu/download.html">Installer Gmic</a> </p>
 <p>Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend en tache de fond sur le port 5000 puis le frontend sur le port 3000).</p>
 <p>Les scripts ne peuvent être utilisés que si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle à prévoir)</p>
