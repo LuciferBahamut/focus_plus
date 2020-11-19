@@ -5,8 +5,8 @@
 <h2>Intrapreneur</h2>
 <p>Erwan Le Gall (novembre 2019 - octobre 2020)</p>
 
-<p>Logo imaginé et disigné par Erwan Le Gall</p>
-<a href=https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg>Son GitHub</a>
+<p>Logo imaginé et disigné par Erwan Le Gall
+<a href=https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg>Son GitHub</a></p>
 
 <h2>Détails du projet</h2>
 
