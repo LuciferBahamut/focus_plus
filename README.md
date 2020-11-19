@@ -8,7 +8,7 @@
 <p>Logo de Focus+ imaginé et disigné par Erwan Le Gall
 <a href=https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg>Son GitHub</a></p>
 
-![logo_focus+](logo_focus+.png)
+![logo_focus+](./image/logo_focus+.png)
 
 <h2>Détails du projet</h2>
 
@@ -61,7 +61,7 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 
 <p>Voici un petit schéma explicatif du fonctionnement de la première partie :</p>
 
-![schema_explicatif](image/schema_explicatif.png)
+![schema_explicatif](schema_explicatif.png)
 
 <p>Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur</p>
 
