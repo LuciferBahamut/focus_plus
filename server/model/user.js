@@ -13,6 +13,16 @@ const userSchema = mongoose.Schema( {
         required: true,
         trim: true
     },
+    message: {
+        type: String,
+        required: false,
+        trim: true
+    },
+    video: {
+        type: String,
+        required: false,
+        trim: true
+    }
 },
     {
         timestamps: true
