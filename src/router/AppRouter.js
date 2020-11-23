@@ -8,6 +8,7 @@ import Home from '../components/Home';
 import ListFile from '../components/FileList';
 import Connection from '../components/Login';
 import Signup from '../components/Signup';
+import CreatePost from '../components/CreatePost';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -20,6 +21,7 @@ const AppRouter = () => (
           <Route component={App} path="/focus+" exact={true} />
           <Route component={Video} path="/video" exact={true} />
           <Route component={Forum} path="/forum" exact={true} />
+          <Route component={CreatePost} path="/createPost" exact={true} />
           <Route component={ListFile} path="/list" exact={true} />
           <Route component={Connection} path="/login" exact={true} />
           <Route component={Signup} path="/signup" exact={true} />
