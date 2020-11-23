@@ -53,15 +53,33 @@ router.post('/login', async(req, res) => {
         }
 });
 
-/*router.post('/postMsg', async(req, res) => { // FAIRE UNE MAJ DE LA CLASSE
-});*/
+router.post('/postMsg', async(req, res) => { // FAIRE UNE MAJ DE LA CLASSE
+    try {
+        await User.findOne({username: req.body.username})
+        .then(user => {
+            if(!user) { // FIX NOT VERY FONCTIONAL
+                console.log("ERREUR IS HERE !!!");
+                res.status(401).send("Cet utilisateur n'existe pas.");    
+            }
+            if(req.body.password === user.password) {
+            user.message = req.body.message;
+            user.save();
+            } else {
+                res.status(401).send('Mot de passe incorrect.');
+            }
+        })
+        res.send('Votre post à bien été publiez.');
+    } catch(error) {
+        res.status(400).send('Une erreur est survenue lors de la publication de votre post. Veuillez réessayez');
+    }
+});
 
 /*router.post('/postVideo', async(req, res) => { // FAIRE UNE MAJ DE LA CLASSE
 });*/
 
 router.get('/getAllMessage', async (req, res) => {
     try {
-        const user = await User.find({});
+        const user = await User.find({ message: {$exists: true } });
         const sortedByCreationDate = user.sort(
             (a, b) => b.createAt - a.createAt
         );
