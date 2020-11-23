@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import axios from 'axios';
 import { API_URL } from '../utils/constants';
 
 const Forum = () => {
 
-  const [username, setUsername] = useState('');
   const [userMessage, setUserMessage] = useState([]);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -24,14 +23,40 @@ const Forum = () => {
   }, []);
 
 return (
-    <React.Fragment>
-        <Row>
-          <Col>
-            Bienvenue sur la partie Forum
-          </Col>
-        </Row>
-    </React.Fragment>
-    );
+  <React.Fragment>
+  <Row>
+  {errorMsg && <p className="errorMsg">{errorMsg}</p>}
+  <Col md={{ offset: 10 }}>
+      <Button href="/createPost">Nouveau Poste</Button>
+  </Col>
+  </Row>
+  <table className="files-table">
+    <tbody>
+      {userMessage.length > 0 ? (
+        userMessage.map(
+          ({ _id, username, message }) => (
+            <tr key={_id}>
+              <td className="file-title">{username}</td>
+              <td className="file-description">{message}</td>
+            </tr>
+          )
+        )
+      ) : (
+        <tr>
+          <td colSpan={3} style={{ fontWeight: '300' }}>
+            Pas de post trouvé, veuillez réessayez plus tard.
+          </td>
+        </tr>
+      )}
+    </tbody>
+  </table>
+  <Row>
+  <Col md={{ offset: 10 }}>
+    <Button href="/createPost">Nouveau Poste</Button>
+  </Col>
+  </Row>
+</React.Fragment>
+);
 };
 
 export default Forum;
