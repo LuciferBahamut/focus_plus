@@ -27,7 +27,7 @@ return (
   <Row>
   {errorMsg && <p className="errorMsg">{errorMsg}</p>}
   <Col md={{ offset: 10 }}>
-      <Button href="/createPost">Nouveau Poste</Button>
+      <Button href="/createPost">Nouveau Post</Button>
   </Col>
   </Row>
   <table className="files-table">
@@ -52,7 +52,7 @@ return (
   </table>
   <Row>
   <Col md={{ offset: 10 }}>
-    <Button href="/createPost">Nouveau Poste</Button>
+    <Button href="/createPost">Nouveau Post</Button>
   </Col>
   </Row>
 </React.Fragment>
