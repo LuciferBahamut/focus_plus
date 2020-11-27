@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ddcfddcf.chunk.css",
-    "main.js": "/static/js/main.f644471f.chunk.js",
-    "main.js.map": "/static/js/main.f644471f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5790a5d4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5790a5d4.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.06db0d24.chunk.js": "/static/js/2.06db0d24.chunk.js",
-    "static/js/2.06db0d24.chunk.js.map": "/static/js/2.06db0d24.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.ddcfddcf.chunk.css.map": "/static/css/main.ddcfddcf.chunk.css.map",
-    "static/js/2.06db0d24.chunk.js.LICENSE.txt": "/static/js/2.06db0d24.chunk.js.LICENSE.txt"
+    "main.css": "/focus_plus/static/css/main.ddcfddcf.chunk.css",
+    "main.js": "/focus_plus/static/js/main.f644471f.chunk.js",
+    "main.js.map": "/focus_plus/static/js/main.f644471f.chunk.js.map",
+    "runtime-main.js": "/focus_plus/static/js/runtime-main.923d32e5.js",
+    "runtime-main.js.map": "/focus_plus/static/js/runtime-main.923d32e5.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/focus_plus/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.06db0d24.chunk.js": "/focus_plus/static/js/2.06db0d24.chunk.js",
+    "static/js/2.06db0d24.chunk.js.map": "/focus_plus/static/js/2.06db0d24.chunk.js.map",
+    "index.html": "/focus_plus/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/focus_plus/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.ddcfddcf.chunk.css.map": "/focus_plus/static/css/main.ddcfddcf.chunk.css.map",
+    "static/js/2.06db0d24.chunk.js.LICENSE.txt": "/focus_plus/static/js/2.06db0d24.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5790a5d4.js",
+    "static/js/runtime-main.923d32e5.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.06db0d24.chunk.js",
     "static/css/main.ddcfddcf.chunk.css",
