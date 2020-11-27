@@ -1,10 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Focus_plus from '../image/logo_focus+.png';
+import Logo from '../image/logo_ministère.png';
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Focus +</h1>
+      <img src={Logo}
+      alt="ministère logo"
+      title="Logo du ministère"></img>
+      <img src={Focus_plus}
+      alt="Focus+ logo"
+      height="200"
+      title="Focus + logo"></img>
       <nav>
         <NavLink activeClassName="active" to="/" exact={true}>
           Accueil
