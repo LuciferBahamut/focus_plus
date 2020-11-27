@@ -9,6 +9,7 @@ import ListFile from '../components/FileList';
 import Connection from '../components/Login';
 import Signup from '../components/Signup';
 import CreatePost from '../components/CreatePost';
+import Footer from '../components/Footer';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -27,6 +28,7 @@ const AppRouter = () => (
           <Route component={Signup} path="/signup" exact={true} />
         </Switch>
       </div>
+      <Footer />
     </div>
   </BrowserRouter>
 );
