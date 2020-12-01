@@ -1,8 +1,8 @@
-![GitHub deployments](https://img.shields.io/github/deployments/110bis/focus_plus/github-pages?style=plastic)
-
 # Focus+ Prototype
 
 Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.
+
+Status du déploiement : ![GitHub deployments](https://img.shields.io/github/deployments/110bis/focus_plus/github-pages?style=plastic)
 
 ## LICENSE [![GitHub](https://img.shields.io/github/license/110bis/focus_plus?style=plastic)](LICENSE)
 
