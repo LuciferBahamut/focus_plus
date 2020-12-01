@@ -40,12 +40,14 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 Extensions utilisées
 
 * Pour le Front
-       - axios (Requête HTTP) *bootstrap (Framework de CSS) *downloadjs (Gère le download)
+       - axios (Requête HTTP) 
+       - bootstrap (Framework de CSS) 
+       - downloadjs (Gère le download)
        - node-sass
        - react-bootstrap
        - react-dropzone (permet d'avoir notre drag and drop facilement)
        - react-router-dom (permet de naviguer entre les différentes pages facilement)    
-   * Pour le Back
+* Pour le Back
        - mongoose (Connection avec la base de données MongoDB)
        - mongoose-unique-validator
        - jswebtoken
