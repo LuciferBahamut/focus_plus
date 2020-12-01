@@ -1,4 +1,4 @@
-# Focus+ Prototype
+# Focus+ Prototype ![Open Source](https://img.shields.io/badge/Open-Source-Yes-green)
 
 Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.
 
