@@ -58,8 +58,9 @@ Extensions utilisées
        - child_process (Permet d'éxécuter un script)
 
 
-La lib G'MiC à été réaliser par l'université de Caen [Site de G'MIC](https://gmic.eu)
-Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin : [Installer Gmic](https://gmic.eu/download.html)
+La lib G'MiC à été réaliser par l'université de Caen [Site de G'MIC](https://gmic.eu)  
+Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic).  
+Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin : [Installer Gmic](https://gmic.eu/download.html)
 
 Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend en tache de fond sur le port 5000 puis le frontend sur le port 3000).
 Les scripts ne peuvent être utilisés que si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle à prévoir)
@@ -85,12 +86,12 @@ Pour lancher le script "run.sh" utiliser la commande : `./run.sh` cela lancera l
 
 ## Détails
 
-Ceci est un propotype de Focus+ (réalisé par deux stagiaires d'Epitech)
-Nous avons utilisé les languages suivants : React.js + Express.js + Node.js
-Pour la base de données on utilisera : MongoDB (a changer si besoin pour les serveurs du ministère)
-Comme nous utilisons ces outils on utilise donc la techno fullstack appeler MERN
-La partie REACT.js se trouve dans le dossier "src"
-Les parties EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"
+Ceci est un propotype de Focus+ (réalisé par deux stagiaires d'Epitech)  
+Nous avons utilisé les languages suivants : React.js + Express.js + Node.js  
+Pour la base de données on utilisera : MongoDB (a changer si besoin pour les serveurs du ministère)  
+Comme nous utilisons ces outils on utilise donc la techno fullstack appeler MERN  
+La partie REACT.js se trouve dans le dossier "src"  
+Les parties EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"  
 Le front utilise le port 3000 et le back le port 5000 (les ports sont bien sûr modifiables).
 
 Pour la partie Vidéo, les vidéos devront être hébergées sur le PeerTube du Lab110 Bis
