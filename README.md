@@ -2,6 +2,9 @@
 
 <p>Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.</p>
 
+<h2>LICENCE</h2>
+<p>Ce site est publiée sous</p> [licence MIT](LICENSE).
+
 <h2>Intrapreneur</h2>
 <p>Erwan Le Gall (novembre 2019 - octobre 2020)</p>
 
