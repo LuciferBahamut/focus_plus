@@ -1,14 +1,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-<h1>Focus+ Prototype</h1>
+#Focus+ Prototype
 
-<p>Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.</p>
+Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.
 
-<h2>Intrapreneur</h2>
-<p>Erwan Le Gall (novembre 2019 - octobre 2020)</p>
+##Intrapreneur
+Erwan Le Gall (novembre 2019 - octobre 2020)
 
-<p>Logo de Focus+ imaginé et disigné par Erwan Le Gall
-<a href=https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg>Son GitHub</a></p>
+
+Logo de Focus+ imaginé et disigné par Erwan Le Gall
+[![Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)
 
 ![logo_focus+](./src/image/logo_focus+.png)
 
