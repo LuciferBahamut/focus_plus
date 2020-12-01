@@ -1,21 +1,20 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-#Focus+ Prototype
+# Focus+ Prototype
 
 Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.
 
-##Intrapreneur
+## Intrapreneur
 Erwan Le Gall (novembre 2019 - octobre 2020)
 
-
 Logo de Focus+ imaginé et disigné par Erwan Le Gall
-[![Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)
+[![Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)]
 
 ![logo_focus+](./src/image/logo_focus+.png)
 
-<h2>Détails du projet</h2>
+## Détails du projet
 
-<p>Focus+ sera constitué (pour l'instant) de 3 parties, chacune reliée avec une page d'accueil.
+Focus+ sera constitué (pour l'instant) de 3 parties, chacune reliée avec une page d'accueil.
 
 (Pour rappel l'accessibilité est le fait de rendre quelque chose accessible pour des personnes atteinte d'un handicap)
 
@@ -26,76 +25,75 @@ La Deuxième partie : Vidéos sur l'accesiblité
     C'est une partie un peu similaire a Youtube, ou il y aurait des vidéos sur l'accesiblité ou comment rendre certains documents accessibles (des tutoriels)
     
 La Troisième partie : Forum autour de l'accessibilité
-    Un petit forum où les utilisateurs pourront partager leurs expériences sur l'accessibilité</p>
+    Un petit forum où les utilisateurs pourront partager leurs expériences sur l'accessibilité
 
 
-<h2>Détails Technique du projet</h2>
+## Détails Technique du projet
 
-<p>Ce projet suit la technologie fullstack MERN (MongoDB Express React Node).
+Ce projet suit la technologie fullstack MERN (MongoDB Express React Node).
 Le serveur sera hébergé plus tard sur un serveur du ministère, il faudra potentielement changer la partie MongoDB, mais dans le cadre de notre prototype, nous utiliserons cette base de données gratuite.
 
-Cette base de données est facilement modifiable. (Et est pour l'instant sous un compte de Quentin Treheux).</p>
+Cette base de données est facilement modifiable. (Et est pour l'instant sous un compte de Quentin Treheux).
 
-<p>Extensions utilisées :</p>
-    <p>Pour le Front</p>
-        <li>axios (Requête HTTP)</li>
-        <li>bootstrap (Framework de CSS)</li>
-        <li>downloadjs (Gère le download)</li>
-        <li>node-sass</li>
-        <li>react-bootstrap</li>
-        <li>react-dropzone (permet d'avoir notre drag and drop facilement)</li>
-        <li>react-router-dom (permet de naviguer entre les différentes pages facilement)</li>
-    <p></p>
-    <p>Pour le Back</p>
-        <li>mongoose (Connection avec la base de données MongoDB)</li>
-        <li>mongoose-unique-validator</li>
-        <li>jswebtoken</li>
-        <li>body-parser</li>
-        <li>cors</li>
-        <li>multer (Sauvergarde sur le serveur les fichiers uploader)</li>
-        <li>express (Partie Middleware)</li>
-        <li>child_process (Permet d'éxécuter un script)</li>
+Extensions utilisées
 
-<p></p>
-<p>La lib G'MiC à été réaliser par l'université de Caen <a href="https://gmic.eu">Site de G'MIC</a></p>
-<p>Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin : <a href="https://gmic.eu/download.html">Installer Gmic</a> </p>
-<p>Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend en tache de fond sur le port 5000 puis le frontend sur le port 3000).</p>
-<p>Les scripts ne peuvent être utilisés que si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle à prévoir)</p>
+    * Pour le Front
+        - axios (Requête HTTP) *bootstrap (Framework de CSS) *downloadjs (Gère le download)
+        - node-sass
+        - react-bootstrap
+        - react-dropzone (permet d'avoir notre drag and drop facilement)
+        - react-router-dom (permet de naviguer entre les différentes pages facilement)    
+    * Pour le Back
+        - mongoose (Connection avec la base de données MongoDB)
+        - mongoose-unique-validator
+        - jswebtoken
+        - body-parser
+        - cors
+        - multer (Sauvergarde sur le serveur les fichiers uploader)
+        - express (Partie Middleware)
+        - child_process (Permet d'éxécuter un script)
 
-<p>Voici un petit schéma explicatif du fonctionnement de la première partie :</p>
 
+La lib G'MiC à été réaliser par l'université de Caen [![Site de G'MIC](https://gmic.eu)]
+Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin :[![Installer Gmic](https://gmic.eu/download.html)
+
+Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend en tache de fond sur le port 5000 puis le frontend sur le port 3000).
+Les scripts ne peuvent être utilisés que si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle à prévoir)
+
+Voici un petit schéma explicatif du fonctionnement de la première partie :
 ![schema_explicatif](schema_explicatif.png)
 
-<p>Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur</p>
+Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur
 
-<h2>A faire :</h2>
-<p>Fix quelques problèmes (évoquer au dessus).
+## A faire :
+Fix quelques problèmes (évoquer au dessus).
 Rendre le site accessible.
 Sécurisé le site de divers attaques (cyber sécurité).
-Faire les deux autres parties :</p>
-    <li>Partie vidéo (un peu comme youtube)</li>
-    <li>Partie forum (un peu comme jeuxvideo.com)</li>
-    <li>Renforcer la 1er partie avec du machine learning</li>
+Faire les deux autres parties :
 
-<h2>Utilisation</h2>
+    - Partie vidéo (un peu comme youtube)
+    - Partie forum (un peu comme jeuxvideo.com)
+    - Renforcer la 1er partie avec du machine learning
 
-<p> Pour lancher le script "run.sh" utiliser la commande : "./run.sh" cela lancera le backend en tâche de fond puis le frontend.</p>
+## Utilisation
 
-<h2>Détails</h2>
+Pour lancher le script "run.sh" utiliser la commande : "./run.sh" cela lancera le backend en tâche de fond puis le frontend.
 
-<p>Ceci est un propotype de Focus+ (réalisé par deux stagiaires d'Epitech)</p>
-<p>Nous avons utilisé les languages suivants : React.js + Express.js + Node.js</p>
-<p>Pour la base de données on utilisera : MongoDB (a changer si besoin pour les serveurs du ministère)</p>
-<p>Comme nous utilisons ces outils on utilise donc la techno fullstack appeler MERN</p>
-<p>La partie REACT.js se trouve dans le dossier "src"</p>
-<p>Les parties EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"</p>
-<p>Le front utilise le port 3000 et le back le port 5000 (les ports sont bien sûr modifiables).</p>
+## Détails
 
-<p>Pour la partie Vidéo, les vidéos devront être hébergées sur le PeerTube du Lab110 Bis</p>
+Ceci est un propotype de Focus+ (réalisé par deux stagiaires d'Epitech)
+Nous avons utilisé les languages suivants : React.js + Express.js + Node.js
+Pour la base de données on utilisera : MongoDB (a changer si besoin pour les serveurs du ministère)
+Comme nous utilisons ces outils on utilise donc la techno fullstack appeler MERN
+La partie REACT.js se trouve dans le dossier "src"
+Les parties EXPRESS.js et NODE.js elle se trouve dans le dossier "backend"
+Le front utilise le port 3000 et le back le port 5000 (les ports sont bien sûr modifiables).
 
-<h2>Points Historiques :</h2>
-<p>Nous avons eu quelques problèmes durant la conception de ce prototype.</p>
-<p>ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINES CHOSES CAR CERTAINS PORTS OU ADDRESSES SONT BLOQUEES PAR UN FIREWALL !!!</p>
+Pour la partie Vidéo, les vidéos devront être hébergées sur le PeerTube du Lab110 Bis
+
+## Points Historiques :
+Nous avons eu quelques problèmes durant la conception de ce prototype.
+ATTENTION AU RESEAU DU MINISTERE QUI BLOQUE CERTAINES CHOSES CAR CERTAINS PORTS OU ADDRESSES SONT BLOQUEES PAR UN FIREWALL !!!
 
 - Tout d'abord le choix du langage :
 Nous voulions utiliser à la base du REACT + C# mais les serveurs du ministère sont sous linux, C# étant plus orienté Windows nous avons finalement décidé d'utiliser le Node.js.
@@ -138,10 +136,10 @@ Nous ne pouvons actuellement déployer que la partie Front du site, simplement p
  - Cyber sécurité :
  Nous avons essayer de mettre la librairie de hashache "bcrypt" mais nous avons pas réussi à la faire fonctionner. Point à traiter.
 
-<h2>Nos idées</h2>
+## Nos idées
 
-<p>Voici une petite liste de nos idées concernant la suite du projet :</p>
+Voici une petite liste de nos idées concernant la suite du projet :
     <li>Utiliser Python pour le machine learning afin de compléter la partie 1</li>
     <li>Renforcer la cyber sécurité du site</li>
 
-<p>Pour toutes nouvelles idées voir avec l'intraprenneur du projet</p>
+Pour toutes nouvelles idées voir avec l'intraprenneur du projet
