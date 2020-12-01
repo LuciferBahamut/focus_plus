@@ -4,6 +4,10 @@
 
 Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.
 
+## LICENSE [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Site publiée sous [licence MIT](LICENSE)
+
 ## Intrapreneur
 Erwan Le Gall (novembre 2019 - octobre 2020)
 
@@ -32,12 +36,12 @@ Un petit forum où les utilisateurs pourront partager leurs expériences sur l'a
 
 ## Détails Technique du projet
 
-Ce projet suit la technologie fullstack MERN (MongoDB Express React Node).
+Ce projet suit la technologie fullstack MERN (MongoDB Express React Node).  
 Le serveur sera hébergé plus tard sur un serveur du ministère, il faudra potentielement changer la partie MongoDB, mais dans le cadre de notre prototype, nous utiliserons cette base de données gratuite.
 
 Cette base de données est facilement modifiable. (Et est pour l'instant sous un compte de Quentin Treheux).
 
-Extensions utilisées
+Extensions utilisées :
 
 | Front            | Utilité                       |   | Back                      | Utilité                               |
 |------------------|-------------------------------|---|---------------------------|---------------------------------------|
