@@ -48,7 +48,7 @@ Extensions utilisées :
 | axios            | Requête HTTP                  |   | mongoose                  | Connexion avec base de donnée MONGODB |
 | bootstrap        | Framework de css              |   | mongoose-unique-validator | Permet d'avoir qu'un seul utilisateur |
 | downloadjs       | Gère le download              |   | jswebtoken                | Donne un token a l'utilisateur        |
-| node-sass        |                               |   | body-parser               | Décomplile les requête HTTP           |
+| node-sass        |                               |   | body-parser               | Décompile les requête HTTP           |
 | react-bootstrap  | Bootstrap pour React          |   | cors                      |                                       |
 | react-dropzone   | Drag & Drop simple            |   | multer                    | Sauvegarde sur le serveur             |
 | react-router-dom | Navigation simple entre pages |   | express                   | Middleware                            |
