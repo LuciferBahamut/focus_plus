@@ -40,22 +40,23 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 Extensions utilisées
 
 * Pour le Front
-       - axios (Requête HTTP) 
-       - bootstrap (Framework de CSS) 
-       - downloadjs (Gère le download)
-       - node-sass
-       - react-bootstrap
-       - react-dropzone (permet d'avoir notre drag and drop facilement)
-       - react-router-dom (permet de naviguer entre les différentes pages facilement)    
+    - axios (Requête HTTP) 
+    - bootstrap (Framework de CSS) 
+    - downloadjs (Gère le download)
+    - node-sass
+    - react-bootstrap
+    - react-dropzone (permet d'avoir notre drag and drop facilement)
+    - react-router-dom (permet de naviguer entre les différentes pages facilement)
+
 * Pour le Back
-       - mongoose (Connection avec la base de données MongoDB)
-       - mongoose-unique-validator
-       - jswebtoken
-       - body-parser
-       - cors
-       - multer (Sauvergarde sur le serveur les fichiers uploader)
-       - express (Partie Middleware)
-       - child_process (Permet d'éxécuter un script)
+    - mongoose (Connection avec la base de données MongoDB)
+    - mongoose-unique-validator
+    - jswebtoken
+    - body-parser
+    - cors
+    - multer (Sauvergarde sur le serveur les fichiers uploader)
+    - express (Partie Middleware)
+    - child_process (Permet d'éxécuter un script)
 
 
 La lib G'MiC à été réaliser par l'université de Caen [Site de G'MIC](https://gmic.eu)  
