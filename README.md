@@ -39,25 +39,16 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 
 Extensions utilisées
 
-* Pour le Front
-    - axios (Requête HTTP) 
-    - bootstrap (Framework de CSS) 
-    - downloadjs (Gère le download)
-    - node-sass
-    - react-bootstrap
-    - react-dropzone (permet d'avoir notre drag and drop facilement)
-    - react-router-dom (permet de naviguer entre les différentes pages facilement)
-
-* Pour le Back
-    - mongoose (Connection avec la base de données MongoDB)
-    - mongoose-unique-validator
-    - jswebtoken
-    - body-parser
-    - cors
-    - multer (Sauvergarde sur le serveur les fichiers uploader)
-    - express (Partie Middleware)
-    - child_process (Permet d'éxécuter un script)
-
+| Front            | Utilité                       |   | Back                      | Utilité                               |
+|------------------|-------------------------------|---|---------------------------|---------------------------------------|
+| axios            | Requête HTTP                  |   | mongoose                  | Connexion avec base de donnée MONGODB |
+| bootstrap        | Framework de css              |   | mongoose-unique-validator | Permet d'avoir qu'un seul utilisateur |
+| downloadjs       | Gère le download              |   | jswebtoken                | Donne un token a l'utilisateur        |
+| node-sass        |                               |   | body-parser               | Décomplile les requête HTTP           |
+| react-bootstrap  | Bootstrap pour React          |   | cors                      |                                       |
+| react-dropzone   | Drag & Drop simple            |   | multer                    | Sauvegarde sur le serveur             |
+| react-router-dom | Navigation simple entre pages |   | express                   | Middleware                            |
+|                  |                               |   | child_process             | Permet d'éxécuter des scripts         |
 
 La lib G'MiC à été réaliser par l'université de Caen [Site de G'MIC](https://gmic.eu)  
 Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic).  
