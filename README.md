@@ -8,7 +8,7 @@ Outil d'évaluation en ligne du niveau d'accessibilité des documents administra
 Erwan Le Gall (novembre 2019 - octobre 2020)
 
 Logo de Focus+ imaginé et disigné par Erwan Le Gall
-[![Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)]
+[Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)
 
 ![logo_focus+](./src/image/logo_focus+.png)
 
@@ -19,13 +19,15 @@ Focus+ sera constitué (pour l'instant) de 3 parties, chacune reliée avec une p
 (Pour rappel l'accessibilité est le fait de rendre quelque chose accessible pour des personnes atteinte d'un handicap)
 
 La Première partie : L'évaluation / Conversion d'un document en document accessible
-    C'est le coeur du projet, cette partie consite a récupérer un document puis juger si ce document est accesible ou non, et l'indiquer à l'utilisateur (voir de le modifier si besoin)
+
+C'est le coeur du projet, cette partie consite a récupérer un document puis juger si ce document est accesible ou non, et l'indiquer à l'utilisateur (voir de le modifier si besoin)
     
 La Deuxième partie : Vidéos sur l'accesiblité
-    C'est une partie un peu similaire a Youtube, ou il y aurait des vidéos sur l'accesiblité ou comment rendre certains documents accessibles (des tutoriels)
+C'est une partie un peu similaire a Youtube, ou il y aurait des vidéos sur l'accesiblité ou comment rendre certains documents accessibles (des tutoriels)
     
 La Troisième partie : Forum autour de l'accessibilité
-    Un petit forum où les utilisateurs pourront partager leurs expériences sur l'accessibilité
+
+Un petit forum où les utilisateurs pourront partager leurs expériences sur l'accessibilité
 
 
 ## Détails Technique du projet
@@ -37,25 +39,25 @@ Cette base de données est facilement modifiable. (Et est pour l'instant sous un
 
 Extensions utilisées
 
-    * Pour le Front
-        - axios (Requête HTTP) *bootstrap (Framework de CSS) *downloadjs (Gère le download)
-        - node-sass
-        - react-bootstrap
-        - react-dropzone (permet d'avoir notre drag and drop facilement)
-        - react-router-dom (permet de naviguer entre les différentes pages facilement)    
-    * Pour le Back
-        - mongoose (Connection avec la base de données MongoDB)
-        - mongoose-unique-validator
-        - jswebtoken
-        - body-parser
-        - cors
-        - multer (Sauvergarde sur le serveur les fichiers uploader)
-        - express (Partie Middleware)
-        - child_process (Permet d'éxécuter un script)
+* Pour le Front
+       - axios (Requête HTTP) *bootstrap (Framework de CSS) *downloadjs (Gère le download)
+       - node-sass
+       - react-bootstrap
+       - react-dropzone (permet d'avoir notre drag and drop facilement)
+       - react-router-dom (permet de naviguer entre les différentes pages facilement)    
+   * Pour le Back
+       - mongoose (Connection avec la base de données MongoDB)
+       - mongoose-unique-validator
+       - jswebtoken
+       - body-parser
+       - cors
+       - multer (Sauvergarde sur le serveur les fichiers uploader)
+       - express (Partie Middleware)
+       - child_process (Permet d'éxécuter un script)
 
 
-La lib G'MiC à été réaliser par l'université de Caen [![Site de G'MIC](https://gmic.eu)]
-Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin :[![Installer Gmic](https://gmic.eu/download.html)
+La lib G'MiC à été réaliser par l'université de Caen [Site de G'MIC](https://gmic.eu)
+Le script.sh ("gmic.sh" dans le dossier backend) s'utilise avec la lib de gmic (installateur (.rpm) dans le dossier Install_Gmic). Le prototype ayant été fait sous fedora il est possible que le .rpm ne soit pas utilisable pour votre système d'exploitation, voici un lien si besoin : [Installer Gmic](https://gmic.eu/download.html)
 
 Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend en tache de fond sur le port 5000 puis le frontend sur le port 3000).
 Les scripts ne peuvent être utilisés que si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle à prévoir)
@@ -71,13 +73,13 @@ Rendre le site accessible.
 Sécurisé le site de divers attaques (cyber sécurité).
 Faire les deux autres parties :
 
-    - Partie vidéo (un peu comme youtube)
-    - Partie forum (un peu comme jeuxvideo.com)
-    - Renforcer la 1er partie avec du machine learning
+- Partie vidéo (un peu comme youtube)
+- Partie forum (un peu comme jeuxvideo.com)
+- Renforcer la 1er partie avec du machine learning
 
 ## Utilisation
 
-Pour lancher le script "run.sh" utiliser la commande : "./run.sh" cela lancera le backend en tâche de fond puis le frontend.
+Pour lancher le script "run.sh" utiliser la commande : `./run.sh` cela lancera le backend en tâche de fond puis le frontend.
 
 ## Détails
 
@@ -139,7 +141,7 @@ Nous ne pouvons actuellement déployer que la partie Front du site, simplement p
 ## Nos idées
 
 Voici une petite liste de nos idées concernant la suite du projet :
-    <li>Utiliser Python pour le machine learning afin de compléter la partie 1</li>
-    <li>Renforcer la cyber sécurité du site</li>
+- Utiliser Python pour le machine learning afin de compléter la partie 1
+- Renforcer la cyber sécurité du site
 
 Pour toutes nouvelles idées voir avec l'intraprenneur du projet
