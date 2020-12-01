@@ -4,7 +4,7 @@
 
 Outil d'évaluation en ligne du niveau d'accessibilité des documents administratifs quels que soient leurs formats, proposant l'accompagnement nécessaire pour que l'utilisateur puisse améliorer sa production.
 
-## LICENSE ![GitHub](https://img.shields.io/github/license/110bis/focus_plus?style=plastic)(LICENSE)
+## LICENSE [![GitHub](https://img.shields.io/github/license/110bis/focus_plus?style=plastic)](LICENSE)
 
 Site publiée sous [licence MIT](LICENSE)
 
