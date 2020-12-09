@@ -1,10 +1,5 @@
 #!/usr/bin/bash
 
-cd server
-if [-d files ]; then
-mkdir files
-fi
-
 if [ -d node_modules ]; then
     npm start &
 else
@@ -12,10 +7,20 @@ npm install
 npm start &
 fi
 
-cd ..
-if [ -d node_modules ]; then
+cd server
+if [ -d files ]; then
+    if [ -d node_modules ]; then
+        npm start
+    else
+    npm install
     npm start
+    fi
 else
-npm install
-npm start
+    mkdir files
+    if [ -d node_modules ]; then
+        npm start
+    else
+    npm install
+    npm start
+    fi
 fi
