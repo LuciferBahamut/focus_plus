@@ -4,7 +4,7 @@ if exist "%cd%\node_modules" (
     npm install
     start npm start
 )
-
+pause
 cd .\server
 if exist "%cd%\files" (
     if exist "%cd%\node_modules" (
