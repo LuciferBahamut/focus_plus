@@ -12,4 +12,9 @@ if not exist "%cd%\node_modules" (
     mkdir files
     )
     start npm start
+) else (
+    if not exist "%cd%\files" (
+    mkdir files
+    )
+    start npm start
 )
