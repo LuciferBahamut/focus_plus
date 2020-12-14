@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Focus_plus from '../image/logo_focus+.png';
 import Logo from '../image/logo_ministère.png';
 import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
