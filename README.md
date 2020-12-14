@@ -14,7 +14,7 @@ Erwan Le Gall (novembre 2019 - octobre 2020)
 Logo de Focus+ imaginé et disigné par Erwan Le Gall
 [Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)
 
-![logo_focus+](./windows/src/image/logo_focus+.png)
+![logo_focus+](./Windows/src/image/logo_focus+.png)
 
 ## Détails du projet
 
