@@ -1,5 +1,5 @@
 if not exist "%cd%\node_modules" (
-    start npm install
+    npm install
     start npm start
 ) else (
     start npm start
@@ -7,7 +7,7 @@ if not exist "%cd%\node_modules" (
 
 cd .\server
 if not exist "%cd%\node_modules" (
-    start npm install
+    npm install
     if not exist "%cd%\files" (
     mkdir files
     )
