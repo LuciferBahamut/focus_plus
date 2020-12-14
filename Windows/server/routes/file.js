@@ -39,7 +39,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         file_mimetype: "archive/zip"
       });
       await file.save();
-      exec('bat gmicwin.bat /myDir');
+      exec('gmicwin.bat');
       res.send('Votre image a bien été envoyée.');
     } catch (error) {
       res.status(400).send("Erreur pendant l'envoie. Réessayez plus tard.");

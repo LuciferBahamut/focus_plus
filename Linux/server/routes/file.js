@@ -39,7 +39,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         file_mimetype: "archive/zip"
       });
       await file.save();
-      exec('sh gmic.sh /myDir');
+      exec('gmic.sh');
       res.send('Votre image a bien été envoyée.');
     } catch (error) {
       res.status(400).send("Erreur pendant l'envoie. Réessayez plus tard.");
