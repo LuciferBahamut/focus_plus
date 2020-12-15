@@ -16,6 +16,20 @@ Logo de Focus+ imaginé et disigné par Erwan Le Gall
 
 ![logo_focus+](./Windows/src/image/logo_focus+.png)
 
+Le projet est à ce jour sans intrapreneur
+
+## Installer le projet
+
+Il y a deux versions du projet :
+Une version Linux, cette version est la version d'origine, elle utilise des scripts .sh (le front et le backend en lui même ne change pas).
+Pour installer Focus+, il suffit d'ouvrir un terminal, d'aller a la racine du projet et faire la commande `run.sh`, cela installera les modules nécessaire au fonctionnement du site.
+Ensuite vous trouverez dans le dossier "logiciel à installer" puis "Linux" ce qu'il faut installer pour finir toute l'installation (installera G'MIC).
+
+Une version Windows, cette version a été réalisée pour être installer sur une machine du Lab 110 Bis afin que le projet soit déploié.
+Les .sh ont donc été convertis en .bat
+Pour installer Focus+, il suffit d'aller dans le dossier "logiciel à installer" puis "windows" et installer les logiciels nécessaire au bon fonctionnement du projet (7zip extra et G'MIC), (vidéo a faire)
+en cours de modifications
+
 ## Détails du projet
 
 Focus+ sera constitué (pour l'instant) de 3 parties, chacune reliée avec une page d'accueil.
@@ -67,18 +81,19 @@ Voici un petit schéma explicatif du fonctionnement de la première partie :
 Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur
 
 ## A faire :
-Fix quelques problèmes (évoquer au dessus).
-Rendre le site accessible.
-Sécurisé le site de divers attaques (cyber sécurité).
-Faire les deux autres parties :
-
-- Partie vidéo (un peu comme youtube)
+- Fix quelques problèmes
+- Rendre le site accessible (A11Y)
+- Sécurisé le site de divers attaques (cyber sécurité)
+- Partie vidéo (un peu comme youtube, vidéo héberger sur PeerTube)
 - Partie forum (un peu comme jeuxvideo.com)
 - Renforcer la 1er partie avec du machine learning
+- Ajouter de nouvelles fonctionnalités
 
 ## Utilisation
 
-Pour lancher le script "run.sh" utiliser la commande : `./run.sh` cela lancera le backend en tâche de fond puis le frontend.
+Pour lancher le script 
+- Sous Linux : "run.sh" utiliser la commande : `./run.sh` cela lancera le backend en tâche de fond puis le frontend.
+- Sous Windows : Aller dans le dossier et lancer le fichier appeler "run".
 
 ## Détails
 
@@ -127,20 +142,23 @@ Regardez React a11y, bootstrap a11y et css a11y.
 MongoDB nous cause des problèmes car pour l'instant seulement Quentin arrive à l'utiliser avec le programme malgré la désactivation du filtre d'adresse IP.
 
 - Déploiement du site :
-Nous ne pouvons actuellement déployer que la partie Front du site, simplement parce que notre backend est constiué de 3 parties et deux d'entre elles sont du Bash et une Lib GMIC, ce qui rend difficile l'hébergement de ce dernier sans utiliser un de nos serveurs (en cours de réflexion).
+Nous ne pouvons actuellement déployer que la partie Front du site, simplement parce que notre backend est constiué de 3 parties et deux d'entre elles sont du Bash et une Lib GMIC, ce qui rend difficile l'hébergement de ce dernier sans utiliser un de nos serveurs, il sera finalement installer en local (voir plus bas).
 
 ![schema_explicatif_bis](schema_explicatif_bis.png)
 
- - Utilisateur :
- Nous avons rencotrés des problèmes avec une route pour créer nos utilisateur. Cela est finalement régler avec la lib "body-parser".
+- Utilisateur :
+Nous avons rencotrés des problèmes avec une route pour créer nos utilisateur. Cela est finalement régler avec la lib "body-parser".
 
- - Cyber sécurité :
- Nous avons essayer de mettre la librairie de hashache "bcrypt" mais nous avons pas réussi à la faire fonctionner. Point à traiter.
+- Cyber sécurité :
+Nous avons essayer de mettre la librairie de hashache "bcrypt" mais nous avons pas réussi à la faire fonctionner. Point à traiter.
+
+- Déployement :
+Nous avons eu des problèmes pour le déployement du site en local, il fallait ouvrir des ports malheureusement étant donner la sécurité du ministère cela étant impossible car MongoDB n'a pas d'adresse fix.
+Du coup nous avons installé MongoDB en local.
 
 ## Nos idées
 
 Voici une petite liste de nos idées concernant la suite du projet :
-- Utiliser Python pour le machine learning afin de compléter la partie 1
-- Renforcer la cyber sécurité du site
+- Utiliser Python pour le machine learning afin de compléter la partie 1 ou contactez l'université de Caen (créateur de G'MIC, afin de colaborer pour améliorer leur programme et implémenter la correction automatique).
 
 Pour toutes nouvelles idées voir avec l'intraprenneur du projet
